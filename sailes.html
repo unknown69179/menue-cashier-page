@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sales</title>
+    <link rel="stylesheet" href="management.css">
+</head>
+<body>
+    <div class="container-c" style="height: auto; width: 600px; justify-content: start;">
+        <select id="options" class="search">
+            <option value="all">all the sales</option>
+            <option value="bydate">search by date</option>
+        </select>
+        <input type="date" id="date" class="search">
+        <br>
+         <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        <div class="total-container">
+            <p id="total"></p>
+        </div>
+    </div>
+    <script type="module" src="sailes.js"></script>
+</body>
+</html>

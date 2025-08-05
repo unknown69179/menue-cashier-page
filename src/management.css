@@ -1,0 +1,139 @@
+body{
+    user-select: none;
+    background-color: hsl(0, 0%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+}
+.typo{
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+}
+input[type="file"]{
+    display: none;
+}
+#imq-box{
+    justify-self: center;
+    width: 200px;
+    height: 150px;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #888;
+    font-size: 16px;
+}
+
+.image-c{
+    justify-self: center;
+    height: 150px;
+    width: 200px;
+}
+
+.container-c{
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    margin-top: 4%;
+    background-color: hsl(0, 0%, 70%);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    flex-direction: column;
+}
+.btn-c{
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 30px;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    background-color: hsl(0, 0%, 80%);
+    transition: background-color 0.25s;
+}
+#btn:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.i1{
+    height: 30px;
+    font-size: large;
+    border: none;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 5px;
+}
+ul{
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid;
+    background-color: hsl(0, 0%, 90%);
+}
+ul >*{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    align-self: start;
+    border: 1px solid;
+    transition: background-color 0.25s;
+}
+ul >*:hover{
+    border: none;
+    background-color: white;
+}
+#show-sales{
+    background-color: white;
+    width: 500px;
+    height: auto;
+}
+.total-container{
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-top: 5px;
+    background-color: hsl(0, 0%, 80%);
+    justify-self: center;
+}
+#options{
+    margin-bottom: 5px;
+}
+.search{
+    color: white;
+    border: 10px hsl(0, 0%, 100%);
+    background: hsla(0, 92%, 74%, 0.352); 
+    backdrop-filter: blur(30px);
+    text-align: center;
+    width: 150px;
+    height: 50px;
+}
+.inp{
+    font-size: 1.3rem;
+    height: 20px;
+    width: 250px;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+th, td {
+  padding: 12px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: white;
+}

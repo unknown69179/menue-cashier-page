@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>managment of the items</title>
+    <link rel="stylesheet" href="management.css">
+</head>
+<body>
+    <div id="container" class="container-c">
+        <form id="rbtn" enctype="multipart/form-data">
+            <label for="type" style="justify-self: center;">choose the cetagory</label><br>
+        <select id="type" name="type" class="typo" style="justify-self: center;">
+            <option value="chicken">chicken</option>
+            <option value="meat">meat</option>
+            <option value="extras">extras</option>
+        </select>
+        <label for="img" id="imq-box">selec a image</label>
+        <img id="image" class="image-c" style="display: none;"><br>
+        <input type="file" accept="image/*" id="img"><br>
+        <label for="name">enter the name of the item</label><br>
+        <input class="i1"  type="text" id="name"><br>
+        <label for="price">enter the price of the item</label><br>
+        <input class="i1" type="number" step="0.01"  id="price" min="0"><br>
+        <button type="submit" id="btn" class="btn-c">press to submit</button>
+        </form>
+    </div>
+    <div id="container2" class="container-c" style="display: none;">
+        <form id="update">
+            <ul id="update-list"></ul>
+        </form>
+    </div>
+    <div id="container3" class="container-c" style="display: none;">
+        <form id="delete">
+            <ul id="delete-list"></ul>
+            <button id="bts2" class="btn-c">click to delete</button>
+        </form>
+    </div>
+    <div id="container4" class="container-c" style="display: none;">
+        <form id="update-sector" enctype="multipart/form-data">
+        <label for="type-u" style="justify-self: center;">choose the cetagory</label><br>
+        <select id="type-u" name="type-u" class="typo" style="justify-self: center;">
+            <option value="chicken">chicken</option>
+            <option value="meat">meat</option>
+            <option value="extras">extras</option>
+        </select>
+        <label for="img-u" id="imq-update">
+            <img id="image-update" class="image-c" style="display: none;">
+        </label>
+        <br>
+        <input type="file" accept="image/*" id="img-u"><br>
+        <label for="name-u">enter the name of the item</label><br>
+        <input class="i1"  type="text" id="name-u"><br>
+        <label for="price-u">enter the price of the item</label><br>
+        <input class="i1" type="number" step="0.01" id="price-u" min="0"><br>
+        <button id="bts3" class="btn-c">click to update</button>
+        </form>
+    </div>
+    <select id="method" class="typo">
+        <option value="insert">insert new item</option>
+        <option value="update">update item</option>
+        <option value="delete">delete item</option>
+    </select>
+    <script type="module" src="management.js"></script>
+</body>
+</html>

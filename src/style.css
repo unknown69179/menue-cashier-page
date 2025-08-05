@@ -1,0 +1,213 @@
+body{
+    background-color: rgb(225, 225, 95);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: background-color 0.5s;
+    margin: 0;
+    overflow: hidden;
+}
+div{
+    user-select: none;
+}
+#settings{
+    margin-top: 7px;
+    margin-left: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 2rem;
+    background-color: grey;
+    align-self:flex-start;
+    transition: background-color 0.25s;
+}
+#the-s{
+    background-color: gray;
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    width: 200px;
+    row-gap: 10px;
+    flex-direction: column;
+    align-self: start;
+    justify-content: center;
+    border: 3px solid;
+    transition: transform 0.5s;
+    transform: translateX(-100%);
+}
+.s-topics{
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    transition: scale 0.2s,background-color 0.2s;
+}
+.s-topics:hover{
+    background-color: hsl(0, 0%, 70%);
+    scale: 1.1;
+}
+#settings:hover{
+    background-color: hsl(0, 0%, 70%);
+}
+#container1{
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 15px;
+    width: 400px;
+    display: flex;
+    column-gap: 5px;
+    justify-content: space-between;
+    position: fixed;
+    background-color: hsl(0, 0%, 30%);
+}
+.topic{
+    border-radius: 8px;
+    height: 30px;
+    width: 100px;
+    font-weight: bolder;
+    text-align: center;
+    transition: scale 0.25s,filter 0.25s;
+}
+.topic:hover{
+    scale: 1.1;
+}
+#chicken{
+    background-color: yellow;
+}
+#meat{
+    background-color: hsl(0, 100%, 50%);
+}
+#extras{
+    background-color: hsl(240, 100%, 50%);
+}
+#order{
+    background-color: hsl(0, 0%, 100%);
+}
+.container{
+    overflow-y: auto;
+    flex-wrap:wrap;
+    padding: 20px;
+    display: flex;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 6%;
+    border-radius: 50px;
+    height: 80vh;
+    width: 80vw;
+    transition: transform 0.5s;
+}
+
+.container::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+#container-chicken{
+    position: fixed;
+    background-color: yellow;
+}
+#container-extras{
+    position: fixed;
+    transform: translateX(200vw);
+    background-color: blue;
+}
+#container-meat{
+    position: fixed;
+    transform: translateX(100vw);
+    background-color: red;
+}
+
+#container-order{
+    padding: 0;
+    row-gap: 0;
+    font-size: 2rem;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    transform: translateX(300vw);
+    background-color: hsl(0, 0%, 80%);
+}
+
+.items{ 
+    text-align: center;
+    padding-bottom: 1px;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+    background-color: hsl(0, 0%, 60%);
+    display: flex;
+    width: 200px;
+    height: 250px;
+    transition: scale 0.25s,background-color 0.25s;
+}
+.items:hover{
+    background-color: hsl(0, 0%, 70%);
+    scale: 1.1;
+}
+.images-menue{
+    align-self: flex-start;
+    width: 200px;
+    height: 150px;
+    border-radius: 40px;
+}
+.items-text-n{
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    font-size: large;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.items-text-p{
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    font-size: large;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+.items-text-o{
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding: 0;
+    font-weight: bolder;
+    font-size: large;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+
+#order-container{
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 60%);
+    width: 60vw; 
+    height: 60vh;
+}
+
+#order-container label{
+    margin-left: 10px;
+}
+
+#btn{
+    margin-top: 0;
+    font-size: 1.3rem;
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.checks{
+    scale: 1.5;
+    margin-right: 40px;
+}

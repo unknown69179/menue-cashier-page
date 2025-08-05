@@ -1,0 +1,28 @@
+{
+  "chicken": [
+    {
+      "image": "test1.jpeg",
+      "name": "normal burger",
+      "price": "20.00"
+    },
+    {
+      "image": "test3.webp",
+      "name": "chicken with french fries burger",
+      "price": "15.05"
+    }
+  ],
+  "meat": [
+    {
+      "image": "test2.jpeg",
+      "name": "meat burger",
+      "price": "25.50"
+    }
+  ],
+  "extras": [
+    {
+      "image": "test 3.jpeg",
+      "name": "cola",
+      "price": "2.00"
+    }
+  ]
+}

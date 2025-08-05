@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resturant expenses</title>
+    <link rel="stylesheet" href="management.css">
+</head>
+<body>
+    <div id="container-add" class="container-c" style="padding: 15px 50px;justify-content: start; display: none;">
+        <p>enter the cost here</p>
+        <form id="form">
+            <label for="expense-name">enter the name of the item</label><br>
+            <input class="inp" type="text" id="expense-name"><br>
+            <label for="expense-number">enter the total number of the item</label><br>
+            <input class="inp" type="number" id="expense-number" min="0"><br>
+            <label for="expense-price">enter the price of a single item</label><br>
+            <input class="inp" type="number" step="0.01" id="expense-price" min="1"><br>
+            <button type="submit" class="btn-c">submit</button>
+        </form>
+    </div>
+    <div id="container-show" class="container-c">
+        <select id="select-shw" class="search">
+            <option value="all">show all data</option>
+            <option value="bydate">search by date</option>
+        </select>
+        <input type="date" class="search" id="dates" style="display: none;">
+        <div id="cont">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Number</th>
+                        <th>Price</th>
+                        <th>Total Cost</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+            <div class="total-container">
+                <p id="Total"></p>
+            </div>
+        </div>
+    </div>
+    <select id="select" class="typo">
+        <option value="shw">show expenses</option>
+        <option value="inp">add an expense</option>
+    </select>
+    <script src="restexpenses.js"></script>
+</body>
+</html>
